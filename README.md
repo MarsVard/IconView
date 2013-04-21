@@ -47,4 +47,3 @@ the reason for not using the icofonts as supplied by ex. www.entypo.com is that 
 * [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 **Note that all fonts have their own license.**
-
