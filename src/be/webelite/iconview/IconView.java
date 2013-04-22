@@ -60,12 +60,14 @@ public class IconView extends TextView {
         
     	// TODO check attribute value
         // set correct unicode character as text
-        TypedArray a = context.obtainStyledAttributes(attrs,be.webelite.entypoview.R.styleable.icon);
-        int icon_int_value = a.getInt(be.webelite.entypoview.R.styleable.icon_icon_name, 0);
-       
+    	int icon_int_value = 0;
+    	if(!isInEditMode()){
+    		TypedArray a = context.obtainStyledAttributes(attrs,be.webelite.entypoview.R.styleable.icon);
+    		icon_int_value = a.getInt(be.webelite.entypoview.R.styleable.icon_icon_name, 0);
+    		
+    		a.recycle();
+    	}
         this.setText( Character.toString( (char) icon_int_value) );
-        
-        a.recycle();
         
     	
     	this.entypo = getFontFromRes(be.webelite.entypoview.R.raw.entypo, context);
