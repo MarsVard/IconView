@@ -8,24 +8,622 @@
 package be.webelite.iconviewexample;
 
 public final class R {
+    public static final class anim {
+        public static final int rotate_loading=0x7f040000;
+    }
     public static final class attr {
+        /** <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>entypo_smashing</code></td><td>0xe000</td><td>
+            	created custom font set using icomoon webapp,
+            	converted the css to a list of enums to use as attribute values
+
+            	you can easily create your own icon-pack using icomoon and use it here
+            	I'm currently using entypo icon set because I like the way it looks :)
+            	
+            	you can't use the default icon set from entypo because android doesn't accept hex values longer than 2 bytes
+             </td></tr>
+<tr><td><code>entypo_phone</code></td><td>0xe001</td><td></td></tr>
+<tr><td><code>entypo_mobile</code></td><td>0xe002</td><td></td></tr>
+<tr><td><code>entypo_mouse</code></td><td>0xe003</td><td></td></tr>
+<tr><td><code>entypo_directions</code></td><td>0xe004</td><td></td></tr>
+<tr><td><code>entypo_mail</code></td><td>0xe005</td><td></td></tr>
+<tr><td><code>entypo_paperplane</code></td><td>0xe006</td><td></td></tr>
+<tr><td><code>entypo_pencil</code></td><td>0xe007</td><td></td></tr>
+<tr><td><code>entypo_feather</code></td><td>0xe008</td><td></td></tr>
+<tr><td><code>entypo_paperclip</code></td><td>0xe009</td><td></td></tr>
+<tr><td><code>entypo_drawer</code></td><td>0xe00a</td><td></td></tr>
+<tr><td><code>entypo_reply</code></td><td>0xe00b</td><td></td></tr>
+<tr><td><code>entypo_reply_all</code></td><td>0xe00c</td><td></td></tr>
+<tr><td><code>entypo_forward</code></td><td>0xe00d</td><td></td></tr>
+<tr><td><code>entypo_user</code></td><td>0xe00e</td><td></td></tr>
+<tr><td><code>entypo_users</code></td><td>0xe00f</td><td></td></tr>
+<tr><td><code>entypo_user_add</code></td><td>0xe010</td><td></td></tr>
+<tr><td><code>entypo_vcard</code></td><td>0xe011</td><td></td></tr>
+<tr><td><code>entypo_export</code></td><td>0xe012</td><td></td></tr>
+<tr><td><code>entypo_location</code></td><td>0xe013</td><td></td></tr>
+<tr><td><code>entypo_map</code></td><td>0xe014</td><td></td></tr>
+<tr><td><code>entypo_compass</code></td><td>0xe015</td><td></td></tr>
+<tr><td><code>entypo_location_2</code></td><td>0xe016</td><td></td></tr>
+<tr><td><code>entypo_target</code></td><td>0xe017</td><td></td></tr>
+<tr><td><code>entypo_share</code></td><td>0xe018</td><td></td></tr>
+<tr><td><code>entypo_sharable</code></td><td>0xe019</td><td></td></tr>
+<tr><td><code>entypo_heart</code></td><td>0xe01a</td><td></td></tr>
+<tr><td><code>entypo_heart_2</code></td><td>0xe01b</td><td></td></tr>
+<tr><td><code>entypo_star</code></td><td>0xe01c</td><td></td></tr>
+<tr><td><code>entypo_star_2</code></td><td>0xe01d</td><td></td></tr>
+<tr><td><code>entypo_thumbs_up</code></td><td>0xe01e</td><td></td></tr>
+<tr><td><code>entypo_thumbs_down</code></td><td>0xe01f</td><td></td></tr>
+<tr><td><code>entypo_chat</code></td><td>0xe020</td><td></td></tr>
+<tr><td><code>entypo_comment</code></td><td>0xe021</td><td></td></tr>
+<tr><td><code>entypo_quote</code></td><td>0xe022</td><td></td></tr>
+<tr><td><code>entypo_house</code></td><td>0xe023</td><td></td></tr>
+<tr><td><code>entypo_popup</code></td><td>0xe024</td><td></td></tr>
+<tr><td><code>entypo_search</code></td><td>0xe025</td><td></td></tr>
+<tr><td><code>entypo_flashlight</code></td><td>0xe026</td><td></td></tr>
+<tr><td><code>entypo_printer</code></td><td>0xe027</td><td></td></tr>
+<tr><td><code>entypo_bell</code></td><td>0xe028</td><td></td></tr>
+<tr><td><code>entypo_link</code></td><td>0xe029</td><td></td></tr>
+<tr><td><code>entypo_flag</code></td><td>0xe02a</td><td></td></tr>
+<tr><td><code>entypo_cog</code></td><td>0xe02b</td><td></td></tr>
+<tr><td><code>entypo_tools</code></td><td>0xe02c</td><td></td></tr>
+<tr><td><code>entypo_trophy</code></td><td>0xe02d</td><td></td></tr>
+<tr><td><code>entypo_tag</code></td><td>0xe02e</td><td></td></tr>
+<tr><td><code>entypo_camera</code></td><td>0xe02f</td><td></td></tr>
+<tr><td><code>entypo_megaphone</code></td><td>0xe030</td><td></td></tr>
+<tr><td><code>entypo_moon</code></td><td>0xe031</td><td></td></tr>
+<tr><td><code>entypo_palette</code></td><td>0xe032</td><td></td></tr>
+<tr><td><code>entypo_leaf</code></td><td>0xe033</td><td></td></tr>
+<tr><td><code>entypo_music</code></td><td>0xe034</td><td></td></tr>
+<tr><td><code>entypo_music_2</code></td><td>0xe035</td><td></td></tr>
+<tr><td><code>entypo_new</code></td><td>0xe036</td><td></td></tr>
+<tr><td><code>entypo_graduation</code></td><td>0xe037</td><td></td></tr>
+<tr><td><code>entypo_book</code></td><td>0xe038</td><td></td></tr>
+<tr><td><code>entypo_newspaper</code></td><td>0xe039</td><td></td></tr>
+<tr><td><code>entypo_bag</code></td><td>0xe03a</td><td></td></tr>
+<tr><td><code>entypo_airplane</code></td><td>0xe03b</td><td></td></tr>
+<tr><td><code>entypo_lifebuoy</code></td><td>0xe03c</td><td></td></tr>
+<tr><td><code>entypo_eye</code></td><td>0xe03d</td><td></td></tr>
+<tr><td><code>entypo_clock</code></td><td>0xe03e</td><td></td></tr>
+<tr><td><code>entypo_microphone</code></td><td>0xe03f</td><td></td></tr>
+<tr><td><code>entypo_calendar</code></td><td>0xe040</td><td></td></tr>
+<tr><td><code>entypo_bolt</code></td><td>0xe041</td><td></td></tr>
+<tr><td><code>entypo_thunder</code></td><td>0xe042</td><td></td></tr>
+<tr><td><code>entypo_droplet</code></td><td>0xe043</td><td></td></tr>
+<tr><td><code>entypo_cd</code></td><td>0xe044</td><td></td></tr>
+<tr><td><code>entypo_briefcase</code></td><td>0xe045</td><td></td></tr>
+<tr><td><code>entypo_air</code></td><td>0xe046</td><td></td></tr>
+<tr><td><code>entypo_hourglass</code></td><td>0xe047</td><td></td></tr>
+<tr><td><code>entypo_gauge</code></td><td>0xe048</td><td></td></tr>
+<tr><td><code>entypo_language</code></td><td>0xe049</td><td></td></tr>
+<tr><td><code>entypo_network</code></td><td>0xe04a</td><td></td></tr>
+<tr><td><code>entypo_key</code></td><td>0xe04b</td><td></td></tr>
+<tr><td><code>entypo_battery</code></td><td>0xe04c</td><td></td></tr>
+<tr><td><code>entypo_bucket</code></td><td>0xe04d</td><td></td></tr>
+<tr><td><code>entypo_magnet</code></td><td>0xe04e</td><td></td></tr>
+<tr><td><code>entypo_drive</code></td><td>0xe04f</td><td></td></tr>
+<tr><td><code>entypo_cup</code></td><td>0xe050</td><td></td></tr>
+<tr><td><code>entypo_rocket</code></td><td>0xe051</td><td></td></tr>
+<tr><td><code>entypo_brush</code></td><td>0xe052</td><td></td></tr>
+<tr><td><code>entypo_suitcase</code></td><td>0xe053</td><td></td></tr>
+<tr><td><code>entypo_cone</code></td><td>0xe054</td><td></td></tr>
+<tr><td><code>entypo_earth</code></td><td>0xe055</td><td></td></tr>
+<tr><td><code>entypo_keyboard</code></td><td>0xe056</td><td></td></tr>
+<tr><td><code>entypo_browser</code></td><td>0xe057</td><td></td></tr>
+<tr><td><code>entypo_publish</code></td><td>0xe058</td><td></td></tr>
+<tr><td><code>entypo_progress_3</code></td><td>0xe059</td><td></td></tr>
+<tr><td><code>entypo_progress_2</code></td><td>0xe05a</td><td></td></tr>
+<tr><td><code>entypo_brogress_1</code></td><td>0xe05b</td><td></td></tr>
+<tr><td><code>entypo_progress_0</code></td><td>0xe05c</td><td></td></tr>
+<tr><td><code>entypo_sun</code></td><td>0xe05d</td><td></td></tr>
+<tr><td><code>entypo_sun_2</code></td><td>0xe05e</td><td></td></tr>
+<tr><td><code>entypo_adjust</code></td><td>0xe05f</td><td></td></tr>
+<tr><td><code>entypo_code</code></td><td>0xe060</td><td></td></tr>
+<tr><td><code>entypo_screen</code></td><td>0xe061</td><td></td></tr>
+<tr><td><code>entypo_infinity</code></td><td>0xe062</td><td></td></tr>
+<tr><td><code>entypo_light_bulb</code></td><td>0xe063</td><td></td></tr>
+<tr><td><code>entypo_credit_card</code></td><td>0xe064</td><td></td></tr>
+<tr><td><code>entypo_database</code></td><td>0xe065</td><td></td></tr>
+<tr><td><code>entypo_voicemail</code></td><td>0xe066</td><td></td></tr>
+<tr><td><code>entypo_clipboard</code></td><td>0xe067</td><td></td></tr>
+<tr><td><code>entypo_cart</code></td><td>0xe068</td><td></td></tr>
+<tr><td><code>entypo_box</code></td><td>0xe069</td><td></td></tr>
+<tr><td><code>entypo_ticket</code></td><td>0xe06a</td><td></td></tr>
+<tr><td><code>entypo_rss</code></td><td>0xe06b</td><td></td></tr>
+<tr><td><code>entypo_signal</code></td><td>0xe06c</td><td></td></tr>
+<tr><td><code>entypo_thermometer</code></td><td>0xe06d</td><td></td></tr>
+<tr><td><code>entypo_droplets</code></td><td>0xe06e</td><td></td></tr>
+<tr><td><code>entypo_untitled</code></td><td>0xe06f</td><td></td></tr>
+<tr><td><code>entypo_statistics</code></td><td>0xe070</td><td></td></tr>
+<tr><td><code>entypo_pie</code></td><td>0xe071</td><td></td></tr>
+<tr><td><code>entypo_bars</code></td><td>0xe072</td><td></td></tr>
+<tr><td><code>entypo_graph</code></td><td>0xe073</td><td></td></tr>
+<tr><td><code>entypo_lock</code></td><td>0xe074</td><td></td></tr>
+<tr><td><code>entypo_lock_open</code></td><td>0xe075</td><td></td></tr>
+<tr><td><code>entypo_logout</code></td><td>0xe076</td><td></td></tr>
+<tr><td><code>entypo_login</code></td><td>0xe077</td><td></td></tr>
+<tr><td><code>entypo_checkmark</code></td><td>0xe078</td><td></td></tr>
+<tr><td><code>entypo_cross</code></td><td>0xe079</td><td></td></tr>
+<tr><td><code>entypo_minus</code></td><td>0xe07a</td><td></td></tr>
+<tr><td><code>entypo_plus</code></td><td>0xe07b</td><td></td></tr>
+<tr><td><code>entypo_cross_2</code></td><td>0xe07c</td><td></td></tr>
+<tr><td><code>entypo_minus_2</code></td><td>0xe07d</td><td></td></tr>
+<tr><td><code>entypo_plus_2</code></td><td>0xe07e</td><td></td></tr>
+<tr><td><code>entypo_cross_3</code></td><td>0xe07f</td><td></td></tr>
+<tr><td><code>entypo_minus_3</code></td><td>0xe080</td><td></td></tr>
+<tr><td><code>entypo_plus_3</code></td><td>0xe081</td><td></td></tr>
+<tr><td><code>entypo_erase</code></td><td>0xe082</td><td></td></tr>
+<tr><td><code>entypo_blocked</code></td><td>0xe083</td><td></td></tr>
+<tr><td><code>entypo_info</code></td><td>0xe084</td><td></td></tr>
+<tr><td><code>entypo_info_2</code></td><td>0xe085</td><td></td></tr>
+<tr><td><code>entypo_question</code></td><td>0xe086</td><td></td></tr>
+<tr><td><code>entypo_help</code></td><td>0xe087</td><td></td></tr>
+<tr><td><code>entypo_warning</code></td><td>0xe088</td><td></td></tr>
+<tr><td><code>entypo_cycle</code></td><td>0xe089</td><td></td></tr>
+<tr><td><code>entypo_cw</code></td><td>0xe08a</td><td></td></tr>
+<tr><td><code>entypo_ccw</code></td><td>0xe08b</td><td></td></tr>
+<tr><td><code>entypo_shuffle</code></td><td>0xe08c</td><td></td></tr>
+<tr><td><code>entypo_arrow</code></td><td>0xe08d</td><td></td></tr>
+<tr><td><code>entypo_arrow_2</code></td><td>0xe08e</td><td></td></tr>
+<tr><td><code>entypo_retweet</code></td><td>0xe08f</td><td></td></tr>
+<tr><td><code>entypo_loop</code></td><td>0xe090</td><td></td></tr>
+<tr><td><code>entypo_history</code></td><td>0xe091</td><td></td></tr>
+<tr><td><code>entypo_back</code></td><td>0xe092</td><td></td></tr>
+<tr><td><code>entypo_switch</code></td><td>0xe093</td><td></td></tr>
+<tr><td><code>entypo_list</code></td><td>0xe094</td><td></td></tr>
+<tr><td><code>entypo_add_to_list</code></td><td>0xe095</td><td></td></tr>
+<tr><td><code>entypo_layout</code></td><td>0xe096</td><td></td></tr>
+<tr><td><code>entypo_list_2</code></td><td>0xe097</td><td></td></tr>
+<tr><td><code>entypo_text</code></td><td>0xe098</td><td></td></tr>
+<tr><td><code>entypo_text_2</code></td><td>0xe099</td><td></td></tr>
+<tr><td><code>entypo_document</code></td><td>0xe09a</td><td></td></tr>
+<tr><td><code>entypo_docs</code></td><td>0xe09b</td><td></td></tr>
+<tr><td><code>entypo_landscape</code></td><td>0xe09c</td><td></td></tr>
+<tr><td><code>entypo_pictures</code></td><td>0xe09d</td><td></td></tr>
+<tr><td><code>entypo_video</code></td><td>0xe09e</td><td></td></tr>
+<tr><td><code>entypo_music_3</code></td><td>0xe09f</td><td></td></tr>
+<tr><td><code>entypo_folder</code></td><td>0xe0a0</td><td></td></tr>
+<tr><td><code>entypo_archive</code></td><td>0xe0a1</td><td></td></tr>
+<tr><td><code>entypo_trash</code></td><td>0xe0a2</td><td></td></tr>
+<tr><td><code>entypo_upload</code></td><td>0xe0a3</td><td></td></tr>
+<tr><td><code>entypo_download</code></td><td>0xe0a4</td><td></td></tr>
+<tr><td><code>entypo_disk</code></td><td>0xe0a5</td><td></td></tr>
+<tr><td><code>entypo_install</code></td><td>0xe0a6</td><td></td></tr>
+<tr><td><code>entypo_cloud</code></td><td>0xe0a7</td><td></td></tr>
+<tr><td><code>entypo_upload_2</code></td><td>0xe0a8</td><td></td></tr>
+<tr><td><code>entypo_bookmark</code></td><td>0xe0a9</td><td></td></tr>
+<tr><td><code>entypo_bookmarks</code></td><td>0xe0aa</td><td></td></tr>
+<tr><td><code>entypo_book_2</code></td><td>0xe0ab</td><td></td></tr>
+<tr><td><code>entypo_play</code></td><td>0xe0ac</td><td></td></tr>
+<tr><td><code>entypo_pause</code></td><td>0xe0ad</td><td></td></tr>
+<tr><td><code>entypo_record</code></td><td>0xe0ae</td><td></td></tr>
+<tr><td><code>entypo_stop</code></td><td>0xe0af</td><td></td></tr>
+<tr><td><code>entypo_next</code></td><td>0xe0b0</td><td></td></tr>
+<tr><td><code>entypo_previous</code></td><td>0xe0b1</td><td></td></tr>
+<tr><td><code>entypo_first</code></td><td>0xe0b2</td><td></td></tr>
+<tr><td><code>entypo_last</code></td><td>0xe0b3</td><td></td></tr>
+<tr><td><code>entypo_resize_enlarge</code></td><td>0xe0b4</td><td></td></tr>
+<tr><td><code>entypo_resize_shrink</code></td><td>0xe0b5</td><td></td></tr>
+<tr><td><code>entypo_volume</code></td><td>0xe0b6</td><td></td></tr>
+<tr><td><code>entypo_sound</code></td><td>0xe0b7</td><td></td></tr>
+<tr><td><code>entypo_mute</code></td><td>0xe0b8</td><td></td></tr>
+<tr><td><code>entypo_flow_cascade</code></td><td>0xe0b9</td><td></td></tr>
+<tr><td><code>entypo_flow_branch</code></td><td>0xe0ba</td><td></td></tr>
+<tr><td><code>entypo_flow_tree</code></td><td>0xe0bb</td><td></td></tr>
+<tr><td><code>entypo_flow_line</code></td><td>0xe0bc</td><td></td></tr>
+<tr><td><code>entypo_flow_parallel</code></td><td>0xe0bd</td><td></td></tr>
+<tr><td><code>entypo_arrow_left</code></td><td>0xe0be</td><td></td></tr>
+<tr><td><code>entypo_arrow_down</code></td><td>0xe0bf</td><td></td></tr>
+<tr><td><code>entypo_arrow_up__upload</code></td><td>0xe0c0</td><td></td></tr>
+<tr><td><code>entypo_arrow_right</code></td><td>0xe0c1</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_2</code></td><td>0xe0c2</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_2</code></td><td>0xe0c3</td><td></td></tr>
+<tr><td><code>entypo_arrow_up</code></td><td>0xe0c4</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_2</code></td><td>0xe0c5</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_3</code></td><td>0xe0c6</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_3</code></td><td>0xe0c7</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_2</code></td><td>0xe0c8</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_3</code></td><td>0xe0c9</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_4</code></td><td>0xe0ca</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_4</code></td><td>0xe0cb</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_3</code></td><td>0xe0cc</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_4</code></td><td>0xe0cd</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_5</code></td><td>0xe0ce</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_5</code></td><td>0xe0cf</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_4</code></td><td>0xe0d0</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_5</code></td><td>0xe0d1</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_6</code></td><td>0xe0d2</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_6</code></td><td>0xe0d3</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_5</code></td><td>0xe0d4</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_6</code></td><td>0xe0d5</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_7</code></td><td>0xe0d6</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_7</code></td><td>0xe0d7</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_6</code></td><td>0xe0d8</td><td></td></tr>
+<tr><td><code>entypo_untitled_2</code></td><td>0xe0d9</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_8</code></td><td>0xe0da</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_8</code></td><td>0xe0db</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_7</code></td><td>0xe0dc</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_7</code></td><td>0xe0dd</td><td></td></tr>
+<tr><td><code>entypo_menu</code></td><td>0xe0de</td><td></td></tr>
+<tr><td><code>entypo_ellipsis</code></td><td>0xe0df</td><td></td></tr>
+<tr><td><code>entypo_dots</code></td><td>0xe0e0</td><td></td></tr>
+<tr><td><code>entypo_dot</code></td><td>0xe0e1</td><td></td></tr>
+<tr><td><code>entypo_cc</code></td><td>0xe0e2</td><td></td></tr>
+<tr><td><code>entypo_cc_by</code></td><td>0xe0e3</td><td></td></tr>
+<tr><td><code>entypo_cc_nc</code></td><td>0xe0e4</td><td></td></tr>
+<tr><td><code>entypo_cc_nc_eu</code></td><td>0xe0e5</td><td></td></tr>
+<tr><td><code>entypo_cc_nc_jp</code></td><td>0xe0e6</td><td></td></tr>
+<tr><td><code>entypo_cc_sa</code></td><td>0xe0e7</td><td></td></tr>
+<tr><td><code>entypo_cc_nd</code></td><td>0xe0e8</td><td></td></tr>
+<tr><td><code>entypo_cc_pd</code></td><td>0xe0e9</td><td></td></tr>
+<tr><td><code>entypo_cc_zero</code></td><td>0xe0ea</td><td></td></tr>
+<tr><td><code>entypo_cc_share</code></td><td>0xe0eb</td><td></td></tr>
+<tr><td><code>entypo_cc_share_2</code></td><td>0xe0ec</td><td></td></tr>
+<tr><td><code>entypo_daniel_bruce</code></td><td>0xe0ed</td><td></td></tr>
+<tr><td><code>entypo_daniel_bruce_2</code></td><td>0xe0ee</td><td></td></tr>
+<tr><td><code>entypo_github</code></td><td>0xe0ef</td><td></td></tr>
+<tr><td><code>entypo_github_2</code></td><td>0xe0f0</td><td></td></tr>
+<tr><td><code>entypo_flickr</code></td><td>0xe0f1</td><td></td></tr>
+<tr><td><code>entypo_flickr_2</code></td><td>0xe0f2</td><td></td></tr>
+<tr><td><code>entypo_vimeo</code></td><td>0xe0f3</td><td></td></tr>
+<tr><td><code>entypo_vimeo_2</code></td><td>0xe0f4</td><td></td></tr>
+<tr><td><code>entypo_twitter</code></td><td>0xe0f5</td><td></td></tr>
+<tr><td><code>entypo_twitter_2</code></td><td>0xe0f6</td><td></td></tr>
+<tr><td><code>entypo_facebook</code></td><td>0xe0f7</td><td></td></tr>
+<tr><td><code>entypo_facebook_2</code></td><td>0xe0f8</td><td></td></tr>
+<tr><td><code>entypo_facebook_3</code></td><td>0xe0f9</td><td></td></tr>
+<tr><td><code>entypo_googleplus</code></td><td>0xe0fa</td><td></td></tr>
+<tr><td><code>entypo_googleplus_2</code></td><td>0xe0fb</td><td></td></tr>
+<tr><td><code>entypo_pinterest</code></td><td>0xe0fc</td><td></td></tr>
+<tr><td><code>entypo_pinterest_2</code></td><td>0xe0fd</td><td></td></tr>
+<tr><td><code>entypo_tumblr</code></td><td>0xe0fe</td><td></td></tr>
+<tr><td><code>entypo_tumblr_2</code></td><td>0xe0ff</td><td></td></tr>
+<tr><td><code>entypo_linkedin</code></td><td>0xe100</td><td></td></tr>
+<tr><td><code>entypo_linkedin_2</code></td><td>0xe101</td><td></td></tr>
+<tr><td><code>entypo_dribbble</code></td><td>0xe102</td><td></td></tr>
+<tr><td><code>entypo_dribbble_2</code></td><td>0xe103</td><td></td></tr>
+<tr><td><code>entypo_stumbleupon</code></td><td>0xe104</td><td></td></tr>
+<tr><td><code>entypo_stumbleupon_2</code></td><td>0xe105</td><td></td></tr>
+<tr><td><code>entypo_lastfm</code></td><td>0xe106</td><td></td></tr>
+<tr><td><code>entypo_lastfm_2</code></td><td>0xe107</td><td></td></tr>
+<tr><td><code>entypo_rdio</code></td><td>0xe108</td><td></td></tr>
+<tr><td><code>entypo_rdio_2</code></td><td>0xe109</td><td></td></tr>
+<tr><td><code>entypo_spotify</code></td><td>0xe10a</td><td></td></tr>
+<tr><td><code>entypo_spotify_2</code></td><td>0xe10b</td><td></td></tr>
+<tr><td><code>entypo_qq</code></td><td>0xe10c</td><td></td></tr>
+<tr><td><code>entypo_instagram</code></td><td>0xe10d</td><td></td></tr>
+<tr><td><code>entypo_dropbox</code></td><td>0xe10e</td><td></td></tr>
+<tr><td><code>entypo_evernote</code></td><td>0xe10f</td><td></td></tr>
+<tr><td><code>entypo_flattr</code></td><td>0xe110</td><td></td></tr>
+<tr><td><code>entypo_skype</code></td><td>0xe111</td><td></td></tr>
+<tr><td><code>entypo_skype_2</code></td><td>0xe112</td><td></td></tr>
+<tr><td><code>entypo_renren</code></td><td>0xe113</td><td></td></tr>
+<tr><td><code>entypo_sina_weibo</code></td><td>0xe114</td><td></td></tr>
+<tr><td><code>entypo_paypal</code></td><td>0xe115</td><td></td></tr>
+<tr><td><code>entypo_picasa</code></td><td>0xe116</td><td></td></tr>
+<tr><td><code>entypo_soundcloud</code></td><td>0xe117</td><td></td></tr>
+<tr><td><code>entypo_mixi</code></td><td>0xe118</td><td></td></tr>
+<tr><td><code>entypo_behance</code></td><td>0xe119</td><td></td></tr>
+<tr><td><code>entypo_circles</code></td><td>0xe11a</td><td></td></tr>
+<tr><td><code>entypo_vk</code></td><td>0xe11b</td><td></td></tr>
+</table>
+         */
+        public static final int icon_name=0x7f010000;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int menu_settings=0x7f070000;
+        public static final int entypo_add_to_list=0x7f060095;
+        public static final int entypo_adjust=0x7f06005f;
+        public static final int entypo_air=0x7f060046;
+        public static final int entypo_airplane=0x7f06003b;
+        public static final int entypo_archive=0x7f0600a1;
+        public static final int entypo_arrow=0x7f06008d;
+        public static final int entypo_arrow_2=0x7f06008e;
+        public static final int entypo_arrow_down=0x7f0600bf;
+        public static final int entypo_arrow_down_2=0x7f0600c3;
+        public static final int entypo_arrow_down_3=0x7f0600c7;
+        public static final int entypo_arrow_down_4=0x7f0600cb;
+        public static final int entypo_arrow_down_5=0x7f0600cf;
+        public static final int entypo_arrow_down_6=0x7f0600d3;
+        public static final int entypo_arrow_down_7=0x7f0600d7;
+        public static final int entypo_arrow_down_8=0x7f0600db;
+        public static final int entypo_arrow_left=0x7f0600be;
+        public static final int entypo_arrow_left_2=0x7f0600c2;
+        public static final int entypo_arrow_left_3=0x7f0600c6;
+        public static final int entypo_arrow_left_4=0x7f0600ca;
+        public static final int entypo_arrow_left_5=0x7f0600ce;
+        public static final int entypo_arrow_left_6=0x7f0600d2;
+        public static final int entypo_arrow_left_7=0x7f0600d6;
+        public static final int entypo_arrow_left_8=0x7f0600da;
+        public static final int entypo_arrow_right=0x7f0600c1;
+        public static final int entypo_arrow_right_2=0x7f0600c5;
+        public static final int entypo_arrow_right_3=0x7f0600c9;
+        public static final int entypo_arrow_right_4=0x7f0600cd;
+        public static final int entypo_arrow_right_5=0x7f0600d1;
+        public static final int entypo_arrow_right_6=0x7f0600d5;
+        public static final int entypo_arrow_right_7=0x7f0600dd;
+        public static final int entypo_arrow_up=0x7f0600c4;
+        public static final int entypo_arrow_up_2=0x7f0600c8;
+        public static final int entypo_arrow_up_3=0x7f0600cc;
+        public static final int entypo_arrow_up_4=0x7f0600d0;
+        public static final int entypo_arrow_up_5=0x7f0600d4;
+        public static final int entypo_arrow_up_6=0x7f0600d8;
+        public static final int entypo_arrow_up_7=0x7f0600dc;
+        public static final int entypo_arrow_up__upload=0x7f0600c0;
+        public static final int entypo_back=0x7f060092;
+        public static final int entypo_bag=0x7f06003a;
+        public static final int entypo_bars=0x7f060072;
+        public static final int entypo_battery=0x7f06004c;
+        public static final int entypo_behance=0x7f060119;
+        public static final int entypo_bell=0x7f060028;
+        public static final int entypo_blocked=0x7f060083;
+        public static final int entypo_bolt=0x7f060041;
+        public static final int entypo_book=0x7f060038;
+        public static final int entypo_book_2=0x7f0600ab;
+        public static final int entypo_bookmark=0x7f0600a9;
+        public static final int entypo_bookmarks=0x7f0600aa;
+        public static final int entypo_box=0x7f060069;
+        public static final int entypo_briefcase=0x7f060045;
+        public static final int entypo_brogress_1=0x7f06005b;
+        public static final int entypo_browser=0x7f060057;
+        public static final int entypo_brush=0x7f060052;
+        public static final int entypo_bucket=0x7f06004d;
+        public static final int entypo_calendar=0x7f060040;
+        public static final int entypo_camera=0x7f06002f;
+        public static final int entypo_cart=0x7f060068;
+        public static final int entypo_cc=0x7f0600e2;
+        public static final int entypo_cc_by=0x7f0600e3;
+        public static final int entypo_cc_nc=0x7f0600e4;
+        public static final int entypo_cc_nc_eu=0x7f0600e5;
+        public static final int entypo_cc_nc_jp=0x7f0600e6;
+        public static final int entypo_cc_nd=0x7f0600e8;
+        public static final int entypo_cc_pd=0x7f0600e9;
+        public static final int entypo_cc_sa=0x7f0600e7;
+        public static final int entypo_cc_share=0x7f0600eb;
+        public static final int entypo_cc_share_2=0x7f0600ec;
+        public static final int entypo_cc_zero=0x7f0600ea;
+        public static final int entypo_ccw=0x7f06008b;
+        public static final int entypo_cd=0x7f060044;
+        public static final int entypo_chat=0x7f060020;
+        public static final int entypo_checkmark=0x7f060078;
+        public static final int entypo_circles=0x7f06011a;
+        public static final int entypo_clipboard=0x7f060067;
+        public static final int entypo_clock=0x7f06003e;
+        public static final int entypo_cloud=0x7f0600a7;
+        public static final int entypo_code=0x7f060060;
+        public static final int entypo_cog=0x7f06002b;
+        public static final int entypo_comment=0x7f060021;
+        public static final int entypo_compass=0x7f060015;
+        public static final int entypo_cone=0x7f060054;
+        public static final int entypo_credit_card=0x7f060064;
+        public static final int entypo_cross=0x7f060079;
+        public static final int entypo_cross_2=0x7f06007c;
+        public static final int entypo_cross_3=0x7f06007f;
+        public static final int entypo_cup=0x7f060050;
+        public static final int entypo_cw=0x7f06008a;
+        public static final int entypo_cycle=0x7f060089;
+        public static final int entypo_daniel_bruce=0x7f0600ed;
+        public static final int entypo_daniel_bruce_2=0x7f0600ee;
+        public static final int entypo_database=0x7f060065;
+        public static final int entypo_directions=0x7f060004;
+        public static final int entypo_disk=0x7f0600a5;
+        public static final int entypo_docs=0x7f06009b;
+        public static final int entypo_document=0x7f06009a;
+        public static final int entypo_dot=0x7f0600e1;
+        public static final int entypo_dots=0x7f0600e0;
+        public static final int entypo_download=0x7f0600a4;
+        public static final int entypo_drawer=0x7f06000a;
+        public static final int entypo_dribbble=0x7f060102;
+        public static final int entypo_dribbble_2=0x7f060103;
+        public static final int entypo_drive=0x7f06004f;
+        public static final int entypo_dropbox=0x7f06010e;
+        public static final int entypo_droplet=0x7f060043;
+        public static final int entypo_droplets=0x7f06006e;
+        public static final int entypo_earth=0x7f060055;
+        public static final int entypo_ellipsis=0x7f0600df;
+        public static final int entypo_erase=0x7f060082;
+        public static final int entypo_evernote=0x7f06010f;
+        public static final int entypo_export=0x7f060012;
+        public static final int entypo_eye=0x7f06003d;
+        public static final int entypo_facebook=0x7f0600f7;
+        public static final int entypo_facebook_2=0x7f0600f8;
+        public static final int entypo_facebook_3=0x7f0600f9;
+        public static final int entypo_feather=0x7f060008;
+        public static final int entypo_first=0x7f0600b2;
+        public static final int entypo_flag=0x7f06002a;
+        public static final int entypo_flashlight=0x7f060026;
+        public static final int entypo_flattr=0x7f060110;
+        public static final int entypo_flickr=0x7f0600f1;
+        public static final int entypo_flickr_2=0x7f0600f2;
+        public static final int entypo_flow_branch=0x7f0600ba;
+        public static final int entypo_flow_cascade=0x7f0600b9;
+        public static final int entypo_flow_line=0x7f0600bc;
+        public static final int entypo_flow_parallel=0x7f0600bd;
+        public static final int entypo_flow_tree=0x7f0600bb;
+        public static final int entypo_folder=0x7f0600a0;
+        public static final int entypo_forward=0x7f06000d;
+        public static final int entypo_gauge=0x7f060048;
+        public static final int entypo_github=0x7f0600ef;
+        public static final int entypo_github_2=0x7f0600f0;
+        public static final int entypo_googleplus=0x7f0600fa;
+        public static final int entypo_googleplus_2=0x7f0600fb;
+        public static final int entypo_graduation=0x7f060037;
+        public static final int entypo_graph=0x7f060073;
+        public static final int entypo_heart=0x7f06001a;
+        public static final int entypo_heart_2=0x7f06001b;
+        public static final int entypo_help=0x7f060087;
+        public static final int entypo_history=0x7f060091;
+        public static final int entypo_hourglass=0x7f060047;
+        public static final int entypo_house=0x7f060023;
+        public static final int entypo_infinity=0x7f060062;
+        public static final int entypo_info=0x7f060084;
+        public static final int entypo_info_2=0x7f060085;
+        public static final int entypo_instagram=0x7f06010d;
+        public static final int entypo_install=0x7f0600a6;
+        public static final int entypo_key=0x7f06004b;
+        public static final int entypo_keyboard=0x7f060056;
+        public static final int entypo_landscape=0x7f06009c;
+        public static final int entypo_language=0x7f060049;
+        public static final int entypo_last=0x7f0600b3;
+        public static final int entypo_lastfm=0x7f060106;
+        public static final int entypo_lastfm_2=0x7f060107;
+        public static final int entypo_layout=0x7f060096;
+        public static final int entypo_leaf=0x7f060033;
+        public static final int entypo_lifebuoy=0x7f06003c;
+        public static final int entypo_light_bulb=0x7f060063;
+        public static final int entypo_link=0x7f060029;
+        public static final int entypo_linkedin=0x7f060100;
+        public static final int entypo_linkedin_2=0x7f060101;
+        public static final int entypo_list=0x7f060094;
+        public static final int entypo_list_2=0x7f060097;
+        public static final int entypo_location=0x7f060013;
+        public static final int entypo_location_2=0x7f060016;
+        public static final int entypo_lock=0x7f060074;
+        public static final int entypo_lock_open=0x7f060075;
+        public static final int entypo_login=0x7f060077;
+        public static final int entypo_logout=0x7f060076;
+        public static final int entypo_loop=0x7f060090;
+        public static final int entypo_magnet=0x7f06004e;
+        public static final int entypo_mail=0x7f060005;
+        public static final int entypo_map=0x7f060014;
+        public static final int entypo_megaphone=0x7f060030;
+        public static final int entypo_menu=0x7f0600de;
+        public static final int entypo_microphone=0x7f06003f;
+        public static final int entypo_minus=0x7f06007a;
+        public static final int entypo_minus_2=0x7f06007d;
+        public static final int entypo_minus_3=0x7f060080;
+        public static final int entypo_mixi=0x7f060118;
+        public static final int entypo_mobile=0x7f060002;
+        public static final int entypo_moon=0x7f060031;
+        public static final int entypo_mouse=0x7f060003;
+        public static final int entypo_music=0x7f060034;
+        public static final int entypo_music_2=0x7f060035;
+        public static final int entypo_music_3=0x7f06009f;
+        public static final int entypo_mute=0x7f0600b8;
+        public static final int entypo_network=0x7f06004a;
+        public static final int entypo_new=0x7f060036;
+        public static final int entypo_newspaper=0x7f060039;
+        public static final int entypo_next=0x7f0600b0;
+        public static final int entypo_palette=0x7f060032;
+        public static final int entypo_paperclip=0x7f060009;
+        public static final int entypo_paperplane=0x7f060006;
+        public static final int entypo_pause=0x7f0600ad;
+        public static final int entypo_paypal=0x7f060115;
+        public static final int entypo_pencil=0x7f060007;
+        public static final int entypo_phone=0x7f060001;
+        public static final int entypo_picasa=0x7f060116;
+        public static final int entypo_pictures=0x7f06009d;
+        public static final int entypo_pie=0x7f060071;
+        public static final int entypo_pinterest=0x7f0600fc;
+        public static final int entypo_pinterest_2=0x7f0600fd;
+        public static final int entypo_play=0x7f0600ac;
+        public static final int entypo_plus=0x7f06007b;
+        public static final int entypo_plus_2=0x7f06007e;
+        public static final int entypo_plus_3=0x7f060081;
+        public static final int entypo_popup=0x7f060024;
+        public static final int entypo_previous=0x7f0600b1;
+        public static final int entypo_printer=0x7f060027;
+        public static final int entypo_progress_0=0x7f06005c;
+        public static final int entypo_progress_2=0x7f06005a;
+        public static final int entypo_progress_3=0x7f060059;
+        public static final int entypo_publish=0x7f060058;
+        public static final int entypo_qq=0x7f06010c;
+        public static final int entypo_question=0x7f060086;
+        public static final int entypo_quote=0x7f060022;
+        public static final int entypo_rdio=0x7f060108;
+        public static final int entypo_rdio_2=0x7f060109;
+        public static final int entypo_record=0x7f0600ae;
+        public static final int entypo_renren=0x7f060113;
+        public static final int entypo_reply=0x7f06000b;
+        public static final int entypo_reply_all=0x7f06000c;
+        public static final int entypo_resize_enlarge=0x7f0600b4;
+        public static final int entypo_resize_shrink=0x7f0600b5;
+        public static final int entypo_retweet=0x7f06008f;
+        public static final int entypo_rocket=0x7f060051;
+        public static final int entypo_rss=0x7f06006b;
+        public static final int entypo_screen=0x7f060061;
+        public static final int entypo_search=0x7f060025;
+        public static final int entypo_sharable=0x7f060019;
+        public static final int entypo_share=0x7f060018;
+        public static final int entypo_shuffle=0x7f06008c;
+        public static final int entypo_signal=0x7f06006c;
+        public static final int entypo_sina_weibo=0x7f060114;
+        public static final int entypo_skype=0x7f060111;
+        public static final int entypo_skype_2=0x7f060112;
+        public static final int entypo_smashing=0x7f060000;
+        public static final int entypo_sound=0x7f0600b7;
+        public static final int entypo_soundcloud=0x7f060117;
+        public static final int entypo_spotify=0x7f06010a;
+        public static final int entypo_spotify_2=0x7f06010b;
+        public static final int entypo_star=0x7f06001c;
+        public static final int entypo_star_2=0x7f06001d;
+        public static final int entypo_statistics=0x7f060070;
+        public static final int entypo_stop=0x7f0600af;
+        public static final int entypo_stumbleupon=0x7f060104;
+        public static final int entypo_stumbleupon_2=0x7f060105;
+        public static final int entypo_suitcase=0x7f060053;
+        public static final int entypo_sun=0x7f06005d;
+        public static final int entypo_sun_2=0x7f06005e;
+        public static final int entypo_switch=0x7f060093;
+        public static final int entypo_tag=0x7f06002e;
+        public static final int entypo_target=0x7f060017;
+        public static final int entypo_text=0x7f060098;
+        public static final int entypo_text_2=0x7f060099;
+        public static final int entypo_thermometer=0x7f06006d;
+        public static final int entypo_thumbs_down=0x7f06001f;
+        public static final int entypo_thumbs_up=0x7f06001e;
+        public static final int entypo_thunder=0x7f060042;
+        public static final int entypo_ticket=0x7f06006a;
+        public static final int entypo_tools=0x7f06002c;
+        public static final int entypo_trash=0x7f0600a2;
+        public static final int entypo_trophy=0x7f06002d;
+        public static final int entypo_tumblr=0x7f0600fe;
+        public static final int entypo_tumblr_2=0x7f0600ff;
+        public static final int entypo_twitter=0x7f0600f5;
+        public static final int entypo_twitter_2=0x7f0600f6;
+        public static final int entypo_untitled=0x7f06006f;
+        public static final int entypo_untitled_2=0x7f0600d9;
+        public static final int entypo_upload=0x7f0600a3;
+        public static final int entypo_upload_2=0x7f0600a8;
+        public static final int entypo_user=0x7f06000e;
+        public static final int entypo_user_add=0x7f060010;
+        public static final int entypo_users=0x7f06000f;
+        public static final int entypo_vcard=0x7f060011;
+        public static final int entypo_video=0x7f06009e;
+        public static final int entypo_vimeo=0x7f0600f3;
+        public static final int entypo_vimeo_2=0x7f0600f4;
+        public static final int entypo_vk=0x7f06011b;
+        public static final int entypo_voicemail=0x7f060066;
+        public static final int entypo_volume=0x7f0600b6;
+        public static final int entypo_warning=0x7f060088;
+        public static final int loading=0x7f06011c;
+        public static final int menu_settings=0x7f06011d;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
     }
     public static final class menu {
-        public static final int activity_main=0x7f060000;
+        public static final int activity_main=0x7f090000;
+    }
+    public static final class raw {
+        public static final int entypo=0x7f050000;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int hello_world=0x7f040002;
-        public static final int menu_settings=0x7f040001;
+        public static final int app_name=0x7f070000;
+        public static final int hello_world=0x7f070002;
+        public static final int menu_settings=0x7f070001;
     }
     public static final class style {
         /** 
@@ -49,10 +647,338 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppTheme=0x7f080001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a icon.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #icon_icon_name be.webelite.iconviewexample:icon_name}</code></td><td></td></tr>
+           </table>
+           @see #icon_icon_name
+         */
+        public static final int[] icon = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link be.webelite.iconviewexample.R.attr#icon_name}
+          attribute's value can be found in the {@link #icon} array.
+
+
+          <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>entypo_smashing</code></td><td>0xe000</td><td>
+            	created custom font set using icomoon webapp,
+            	converted the css to a list of enums to use as attribute values
+
+            	you can easily create your own icon-pack using icomoon and use it here
+            	I'm currently using entypo icon set because I like the way it looks :)
+            	
+            	you can't use the default icon set from entypo because android doesn't accept hex values longer than 2 bytes
+             </td></tr>
+<tr><td><code>entypo_phone</code></td><td>0xe001</td><td></td></tr>
+<tr><td><code>entypo_mobile</code></td><td>0xe002</td><td></td></tr>
+<tr><td><code>entypo_mouse</code></td><td>0xe003</td><td></td></tr>
+<tr><td><code>entypo_directions</code></td><td>0xe004</td><td></td></tr>
+<tr><td><code>entypo_mail</code></td><td>0xe005</td><td></td></tr>
+<tr><td><code>entypo_paperplane</code></td><td>0xe006</td><td></td></tr>
+<tr><td><code>entypo_pencil</code></td><td>0xe007</td><td></td></tr>
+<tr><td><code>entypo_feather</code></td><td>0xe008</td><td></td></tr>
+<tr><td><code>entypo_paperclip</code></td><td>0xe009</td><td></td></tr>
+<tr><td><code>entypo_drawer</code></td><td>0xe00a</td><td></td></tr>
+<tr><td><code>entypo_reply</code></td><td>0xe00b</td><td></td></tr>
+<tr><td><code>entypo_reply_all</code></td><td>0xe00c</td><td></td></tr>
+<tr><td><code>entypo_forward</code></td><td>0xe00d</td><td></td></tr>
+<tr><td><code>entypo_user</code></td><td>0xe00e</td><td></td></tr>
+<tr><td><code>entypo_users</code></td><td>0xe00f</td><td></td></tr>
+<tr><td><code>entypo_user_add</code></td><td>0xe010</td><td></td></tr>
+<tr><td><code>entypo_vcard</code></td><td>0xe011</td><td></td></tr>
+<tr><td><code>entypo_export</code></td><td>0xe012</td><td></td></tr>
+<tr><td><code>entypo_location</code></td><td>0xe013</td><td></td></tr>
+<tr><td><code>entypo_map</code></td><td>0xe014</td><td></td></tr>
+<tr><td><code>entypo_compass</code></td><td>0xe015</td><td></td></tr>
+<tr><td><code>entypo_location_2</code></td><td>0xe016</td><td></td></tr>
+<tr><td><code>entypo_target</code></td><td>0xe017</td><td></td></tr>
+<tr><td><code>entypo_share</code></td><td>0xe018</td><td></td></tr>
+<tr><td><code>entypo_sharable</code></td><td>0xe019</td><td></td></tr>
+<tr><td><code>entypo_heart</code></td><td>0xe01a</td><td></td></tr>
+<tr><td><code>entypo_heart_2</code></td><td>0xe01b</td><td></td></tr>
+<tr><td><code>entypo_star</code></td><td>0xe01c</td><td></td></tr>
+<tr><td><code>entypo_star_2</code></td><td>0xe01d</td><td></td></tr>
+<tr><td><code>entypo_thumbs_up</code></td><td>0xe01e</td><td></td></tr>
+<tr><td><code>entypo_thumbs_down</code></td><td>0xe01f</td><td></td></tr>
+<tr><td><code>entypo_chat</code></td><td>0xe020</td><td></td></tr>
+<tr><td><code>entypo_comment</code></td><td>0xe021</td><td></td></tr>
+<tr><td><code>entypo_quote</code></td><td>0xe022</td><td></td></tr>
+<tr><td><code>entypo_house</code></td><td>0xe023</td><td></td></tr>
+<tr><td><code>entypo_popup</code></td><td>0xe024</td><td></td></tr>
+<tr><td><code>entypo_search</code></td><td>0xe025</td><td></td></tr>
+<tr><td><code>entypo_flashlight</code></td><td>0xe026</td><td></td></tr>
+<tr><td><code>entypo_printer</code></td><td>0xe027</td><td></td></tr>
+<tr><td><code>entypo_bell</code></td><td>0xe028</td><td></td></tr>
+<tr><td><code>entypo_link</code></td><td>0xe029</td><td></td></tr>
+<tr><td><code>entypo_flag</code></td><td>0xe02a</td><td></td></tr>
+<tr><td><code>entypo_cog</code></td><td>0xe02b</td><td></td></tr>
+<tr><td><code>entypo_tools</code></td><td>0xe02c</td><td></td></tr>
+<tr><td><code>entypo_trophy</code></td><td>0xe02d</td><td></td></tr>
+<tr><td><code>entypo_tag</code></td><td>0xe02e</td><td></td></tr>
+<tr><td><code>entypo_camera</code></td><td>0xe02f</td><td></td></tr>
+<tr><td><code>entypo_megaphone</code></td><td>0xe030</td><td></td></tr>
+<tr><td><code>entypo_moon</code></td><td>0xe031</td><td></td></tr>
+<tr><td><code>entypo_palette</code></td><td>0xe032</td><td></td></tr>
+<tr><td><code>entypo_leaf</code></td><td>0xe033</td><td></td></tr>
+<tr><td><code>entypo_music</code></td><td>0xe034</td><td></td></tr>
+<tr><td><code>entypo_music_2</code></td><td>0xe035</td><td></td></tr>
+<tr><td><code>entypo_new</code></td><td>0xe036</td><td></td></tr>
+<tr><td><code>entypo_graduation</code></td><td>0xe037</td><td></td></tr>
+<tr><td><code>entypo_book</code></td><td>0xe038</td><td></td></tr>
+<tr><td><code>entypo_newspaper</code></td><td>0xe039</td><td></td></tr>
+<tr><td><code>entypo_bag</code></td><td>0xe03a</td><td></td></tr>
+<tr><td><code>entypo_airplane</code></td><td>0xe03b</td><td></td></tr>
+<tr><td><code>entypo_lifebuoy</code></td><td>0xe03c</td><td></td></tr>
+<tr><td><code>entypo_eye</code></td><td>0xe03d</td><td></td></tr>
+<tr><td><code>entypo_clock</code></td><td>0xe03e</td><td></td></tr>
+<tr><td><code>entypo_microphone</code></td><td>0xe03f</td><td></td></tr>
+<tr><td><code>entypo_calendar</code></td><td>0xe040</td><td></td></tr>
+<tr><td><code>entypo_bolt</code></td><td>0xe041</td><td></td></tr>
+<tr><td><code>entypo_thunder</code></td><td>0xe042</td><td></td></tr>
+<tr><td><code>entypo_droplet</code></td><td>0xe043</td><td></td></tr>
+<tr><td><code>entypo_cd</code></td><td>0xe044</td><td></td></tr>
+<tr><td><code>entypo_briefcase</code></td><td>0xe045</td><td></td></tr>
+<tr><td><code>entypo_air</code></td><td>0xe046</td><td></td></tr>
+<tr><td><code>entypo_hourglass</code></td><td>0xe047</td><td></td></tr>
+<tr><td><code>entypo_gauge</code></td><td>0xe048</td><td></td></tr>
+<tr><td><code>entypo_language</code></td><td>0xe049</td><td></td></tr>
+<tr><td><code>entypo_network</code></td><td>0xe04a</td><td></td></tr>
+<tr><td><code>entypo_key</code></td><td>0xe04b</td><td></td></tr>
+<tr><td><code>entypo_battery</code></td><td>0xe04c</td><td></td></tr>
+<tr><td><code>entypo_bucket</code></td><td>0xe04d</td><td></td></tr>
+<tr><td><code>entypo_magnet</code></td><td>0xe04e</td><td></td></tr>
+<tr><td><code>entypo_drive</code></td><td>0xe04f</td><td></td></tr>
+<tr><td><code>entypo_cup</code></td><td>0xe050</td><td></td></tr>
+<tr><td><code>entypo_rocket</code></td><td>0xe051</td><td></td></tr>
+<tr><td><code>entypo_brush</code></td><td>0xe052</td><td></td></tr>
+<tr><td><code>entypo_suitcase</code></td><td>0xe053</td><td></td></tr>
+<tr><td><code>entypo_cone</code></td><td>0xe054</td><td></td></tr>
+<tr><td><code>entypo_earth</code></td><td>0xe055</td><td></td></tr>
+<tr><td><code>entypo_keyboard</code></td><td>0xe056</td><td></td></tr>
+<tr><td><code>entypo_browser</code></td><td>0xe057</td><td></td></tr>
+<tr><td><code>entypo_publish</code></td><td>0xe058</td><td></td></tr>
+<tr><td><code>entypo_progress_3</code></td><td>0xe059</td><td></td></tr>
+<tr><td><code>entypo_progress_2</code></td><td>0xe05a</td><td></td></tr>
+<tr><td><code>entypo_brogress_1</code></td><td>0xe05b</td><td></td></tr>
+<tr><td><code>entypo_progress_0</code></td><td>0xe05c</td><td></td></tr>
+<tr><td><code>entypo_sun</code></td><td>0xe05d</td><td></td></tr>
+<tr><td><code>entypo_sun_2</code></td><td>0xe05e</td><td></td></tr>
+<tr><td><code>entypo_adjust</code></td><td>0xe05f</td><td></td></tr>
+<tr><td><code>entypo_code</code></td><td>0xe060</td><td></td></tr>
+<tr><td><code>entypo_screen</code></td><td>0xe061</td><td></td></tr>
+<tr><td><code>entypo_infinity</code></td><td>0xe062</td><td></td></tr>
+<tr><td><code>entypo_light_bulb</code></td><td>0xe063</td><td></td></tr>
+<tr><td><code>entypo_credit_card</code></td><td>0xe064</td><td></td></tr>
+<tr><td><code>entypo_database</code></td><td>0xe065</td><td></td></tr>
+<tr><td><code>entypo_voicemail</code></td><td>0xe066</td><td></td></tr>
+<tr><td><code>entypo_clipboard</code></td><td>0xe067</td><td></td></tr>
+<tr><td><code>entypo_cart</code></td><td>0xe068</td><td></td></tr>
+<tr><td><code>entypo_box</code></td><td>0xe069</td><td></td></tr>
+<tr><td><code>entypo_ticket</code></td><td>0xe06a</td><td></td></tr>
+<tr><td><code>entypo_rss</code></td><td>0xe06b</td><td></td></tr>
+<tr><td><code>entypo_signal</code></td><td>0xe06c</td><td></td></tr>
+<tr><td><code>entypo_thermometer</code></td><td>0xe06d</td><td></td></tr>
+<tr><td><code>entypo_droplets</code></td><td>0xe06e</td><td></td></tr>
+<tr><td><code>entypo_untitled</code></td><td>0xe06f</td><td></td></tr>
+<tr><td><code>entypo_statistics</code></td><td>0xe070</td><td></td></tr>
+<tr><td><code>entypo_pie</code></td><td>0xe071</td><td></td></tr>
+<tr><td><code>entypo_bars</code></td><td>0xe072</td><td></td></tr>
+<tr><td><code>entypo_graph</code></td><td>0xe073</td><td></td></tr>
+<tr><td><code>entypo_lock</code></td><td>0xe074</td><td></td></tr>
+<tr><td><code>entypo_lock_open</code></td><td>0xe075</td><td></td></tr>
+<tr><td><code>entypo_logout</code></td><td>0xe076</td><td></td></tr>
+<tr><td><code>entypo_login</code></td><td>0xe077</td><td></td></tr>
+<tr><td><code>entypo_checkmark</code></td><td>0xe078</td><td></td></tr>
+<tr><td><code>entypo_cross</code></td><td>0xe079</td><td></td></tr>
+<tr><td><code>entypo_minus</code></td><td>0xe07a</td><td></td></tr>
+<tr><td><code>entypo_plus</code></td><td>0xe07b</td><td></td></tr>
+<tr><td><code>entypo_cross_2</code></td><td>0xe07c</td><td></td></tr>
+<tr><td><code>entypo_minus_2</code></td><td>0xe07d</td><td></td></tr>
+<tr><td><code>entypo_plus_2</code></td><td>0xe07e</td><td></td></tr>
+<tr><td><code>entypo_cross_3</code></td><td>0xe07f</td><td></td></tr>
+<tr><td><code>entypo_minus_3</code></td><td>0xe080</td><td></td></tr>
+<tr><td><code>entypo_plus_3</code></td><td>0xe081</td><td></td></tr>
+<tr><td><code>entypo_erase</code></td><td>0xe082</td><td></td></tr>
+<tr><td><code>entypo_blocked</code></td><td>0xe083</td><td></td></tr>
+<tr><td><code>entypo_info</code></td><td>0xe084</td><td></td></tr>
+<tr><td><code>entypo_info_2</code></td><td>0xe085</td><td></td></tr>
+<tr><td><code>entypo_question</code></td><td>0xe086</td><td></td></tr>
+<tr><td><code>entypo_help</code></td><td>0xe087</td><td></td></tr>
+<tr><td><code>entypo_warning</code></td><td>0xe088</td><td></td></tr>
+<tr><td><code>entypo_cycle</code></td><td>0xe089</td><td></td></tr>
+<tr><td><code>entypo_cw</code></td><td>0xe08a</td><td></td></tr>
+<tr><td><code>entypo_ccw</code></td><td>0xe08b</td><td></td></tr>
+<tr><td><code>entypo_shuffle</code></td><td>0xe08c</td><td></td></tr>
+<tr><td><code>entypo_arrow</code></td><td>0xe08d</td><td></td></tr>
+<tr><td><code>entypo_arrow_2</code></td><td>0xe08e</td><td></td></tr>
+<tr><td><code>entypo_retweet</code></td><td>0xe08f</td><td></td></tr>
+<tr><td><code>entypo_loop</code></td><td>0xe090</td><td></td></tr>
+<tr><td><code>entypo_history</code></td><td>0xe091</td><td></td></tr>
+<tr><td><code>entypo_back</code></td><td>0xe092</td><td></td></tr>
+<tr><td><code>entypo_switch</code></td><td>0xe093</td><td></td></tr>
+<tr><td><code>entypo_list</code></td><td>0xe094</td><td></td></tr>
+<tr><td><code>entypo_add_to_list</code></td><td>0xe095</td><td></td></tr>
+<tr><td><code>entypo_layout</code></td><td>0xe096</td><td></td></tr>
+<tr><td><code>entypo_list_2</code></td><td>0xe097</td><td></td></tr>
+<tr><td><code>entypo_text</code></td><td>0xe098</td><td></td></tr>
+<tr><td><code>entypo_text_2</code></td><td>0xe099</td><td></td></tr>
+<tr><td><code>entypo_document</code></td><td>0xe09a</td><td></td></tr>
+<tr><td><code>entypo_docs</code></td><td>0xe09b</td><td></td></tr>
+<tr><td><code>entypo_landscape</code></td><td>0xe09c</td><td></td></tr>
+<tr><td><code>entypo_pictures</code></td><td>0xe09d</td><td></td></tr>
+<tr><td><code>entypo_video</code></td><td>0xe09e</td><td></td></tr>
+<tr><td><code>entypo_music_3</code></td><td>0xe09f</td><td></td></tr>
+<tr><td><code>entypo_folder</code></td><td>0xe0a0</td><td></td></tr>
+<tr><td><code>entypo_archive</code></td><td>0xe0a1</td><td></td></tr>
+<tr><td><code>entypo_trash</code></td><td>0xe0a2</td><td></td></tr>
+<tr><td><code>entypo_upload</code></td><td>0xe0a3</td><td></td></tr>
+<tr><td><code>entypo_download</code></td><td>0xe0a4</td><td></td></tr>
+<tr><td><code>entypo_disk</code></td><td>0xe0a5</td><td></td></tr>
+<tr><td><code>entypo_install</code></td><td>0xe0a6</td><td></td></tr>
+<tr><td><code>entypo_cloud</code></td><td>0xe0a7</td><td></td></tr>
+<tr><td><code>entypo_upload_2</code></td><td>0xe0a8</td><td></td></tr>
+<tr><td><code>entypo_bookmark</code></td><td>0xe0a9</td><td></td></tr>
+<tr><td><code>entypo_bookmarks</code></td><td>0xe0aa</td><td></td></tr>
+<tr><td><code>entypo_book_2</code></td><td>0xe0ab</td><td></td></tr>
+<tr><td><code>entypo_play</code></td><td>0xe0ac</td><td></td></tr>
+<tr><td><code>entypo_pause</code></td><td>0xe0ad</td><td></td></tr>
+<tr><td><code>entypo_record</code></td><td>0xe0ae</td><td></td></tr>
+<tr><td><code>entypo_stop</code></td><td>0xe0af</td><td></td></tr>
+<tr><td><code>entypo_next</code></td><td>0xe0b0</td><td></td></tr>
+<tr><td><code>entypo_previous</code></td><td>0xe0b1</td><td></td></tr>
+<tr><td><code>entypo_first</code></td><td>0xe0b2</td><td></td></tr>
+<tr><td><code>entypo_last</code></td><td>0xe0b3</td><td></td></tr>
+<tr><td><code>entypo_resize_enlarge</code></td><td>0xe0b4</td><td></td></tr>
+<tr><td><code>entypo_resize_shrink</code></td><td>0xe0b5</td><td></td></tr>
+<tr><td><code>entypo_volume</code></td><td>0xe0b6</td><td></td></tr>
+<tr><td><code>entypo_sound</code></td><td>0xe0b7</td><td></td></tr>
+<tr><td><code>entypo_mute</code></td><td>0xe0b8</td><td></td></tr>
+<tr><td><code>entypo_flow_cascade</code></td><td>0xe0b9</td><td></td></tr>
+<tr><td><code>entypo_flow_branch</code></td><td>0xe0ba</td><td></td></tr>
+<tr><td><code>entypo_flow_tree</code></td><td>0xe0bb</td><td></td></tr>
+<tr><td><code>entypo_flow_line</code></td><td>0xe0bc</td><td></td></tr>
+<tr><td><code>entypo_flow_parallel</code></td><td>0xe0bd</td><td></td></tr>
+<tr><td><code>entypo_arrow_left</code></td><td>0xe0be</td><td></td></tr>
+<tr><td><code>entypo_arrow_down</code></td><td>0xe0bf</td><td></td></tr>
+<tr><td><code>entypo_arrow_up__upload</code></td><td>0xe0c0</td><td></td></tr>
+<tr><td><code>entypo_arrow_right</code></td><td>0xe0c1</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_2</code></td><td>0xe0c2</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_2</code></td><td>0xe0c3</td><td></td></tr>
+<tr><td><code>entypo_arrow_up</code></td><td>0xe0c4</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_2</code></td><td>0xe0c5</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_3</code></td><td>0xe0c6</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_3</code></td><td>0xe0c7</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_2</code></td><td>0xe0c8</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_3</code></td><td>0xe0c9</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_4</code></td><td>0xe0ca</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_4</code></td><td>0xe0cb</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_3</code></td><td>0xe0cc</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_4</code></td><td>0xe0cd</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_5</code></td><td>0xe0ce</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_5</code></td><td>0xe0cf</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_4</code></td><td>0xe0d0</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_5</code></td><td>0xe0d1</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_6</code></td><td>0xe0d2</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_6</code></td><td>0xe0d3</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_5</code></td><td>0xe0d4</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_6</code></td><td>0xe0d5</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_7</code></td><td>0xe0d6</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_7</code></td><td>0xe0d7</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_6</code></td><td>0xe0d8</td><td></td></tr>
+<tr><td><code>entypo_untitled_2</code></td><td>0xe0d9</td><td></td></tr>
+<tr><td><code>entypo_arrow_left_8</code></td><td>0xe0da</td><td></td></tr>
+<tr><td><code>entypo_arrow_down_8</code></td><td>0xe0db</td><td></td></tr>
+<tr><td><code>entypo_arrow_up_7</code></td><td>0xe0dc</td><td></td></tr>
+<tr><td><code>entypo_arrow_right_7</code></td><td>0xe0dd</td><td></td></tr>
+<tr><td><code>entypo_menu</code></td><td>0xe0de</td><td></td></tr>
+<tr><td><code>entypo_ellipsis</code></td><td>0xe0df</td><td></td></tr>
+<tr><td><code>entypo_dots</code></td><td>0xe0e0</td><td></td></tr>
+<tr><td><code>entypo_dot</code></td><td>0xe0e1</td><td></td></tr>
+<tr><td><code>entypo_cc</code></td><td>0xe0e2</td><td></td></tr>
+<tr><td><code>entypo_cc_by</code></td><td>0xe0e3</td><td></td></tr>
+<tr><td><code>entypo_cc_nc</code></td><td>0xe0e4</td><td></td></tr>
+<tr><td><code>entypo_cc_nc_eu</code></td><td>0xe0e5</td><td></td></tr>
+<tr><td><code>entypo_cc_nc_jp</code></td><td>0xe0e6</td><td></td></tr>
+<tr><td><code>entypo_cc_sa</code></td><td>0xe0e7</td><td></td></tr>
+<tr><td><code>entypo_cc_nd</code></td><td>0xe0e8</td><td></td></tr>
+<tr><td><code>entypo_cc_pd</code></td><td>0xe0e9</td><td></td></tr>
+<tr><td><code>entypo_cc_zero</code></td><td>0xe0ea</td><td></td></tr>
+<tr><td><code>entypo_cc_share</code></td><td>0xe0eb</td><td></td></tr>
+<tr><td><code>entypo_cc_share_2</code></td><td>0xe0ec</td><td></td></tr>
+<tr><td><code>entypo_daniel_bruce</code></td><td>0xe0ed</td><td></td></tr>
+<tr><td><code>entypo_daniel_bruce_2</code></td><td>0xe0ee</td><td></td></tr>
+<tr><td><code>entypo_github</code></td><td>0xe0ef</td><td></td></tr>
+<tr><td><code>entypo_github_2</code></td><td>0xe0f0</td><td></td></tr>
+<tr><td><code>entypo_flickr</code></td><td>0xe0f1</td><td></td></tr>
+<tr><td><code>entypo_flickr_2</code></td><td>0xe0f2</td><td></td></tr>
+<tr><td><code>entypo_vimeo</code></td><td>0xe0f3</td><td></td></tr>
+<tr><td><code>entypo_vimeo_2</code></td><td>0xe0f4</td><td></td></tr>
+<tr><td><code>entypo_twitter</code></td><td>0xe0f5</td><td></td></tr>
+<tr><td><code>entypo_twitter_2</code></td><td>0xe0f6</td><td></td></tr>
+<tr><td><code>entypo_facebook</code></td><td>0xe0f7</td><td></td></tr>
+<tr><td><code>entypo_facebook_2</code></td><td>0xe0f8</td><td></td></tr>
+<tr><td><code>entypo_facebook_3</code></td><td>0xe0f9</td><td></td></tr>
+<tr><td><code>entypo_googleplus</code></td><td>0xe0fa</td><td></td></tr>
+<tr><td><code>entypo_googleplus_2</code></td><td>0xe0fb</td><td></td></tr>
+<tr><td><code>entypo_pinterest</code></td><td>0xe0fc</td><td></td></tr>
+<tr><td><code>entypo_pinterest_2</code></td><td>0xe0fd</td><td></td></tr>
+<tr><td><code>entypo_tumblr</code></td><td>0xe0fe</td><td></td></tr>
+<tr><td><code>entypo_tumblr_2</code></td><td>0xe0ff</td><td></td></tr>
+<tr><td><code>entypo_linkedin</code></td><td>0xe100</td><td></td></tr>
+<tr><td><code>entypo_linkedin_2</code></td><td>0xe101</td><td></td></tr>
+<tr><td><code>entypo_dribbble</code></td><td>0xe102</td><td></td></tr>
+<tr><td><code>entypo_dribbble_2</code></td><td>0xe103</td><td></td></tr>
+<tr><td><code>entypo_stumbleupon</code></td><td>0xe104</td><td></td></tr>
+<tr><td><code>entypo_stumbleupon_2</code></td><td>0xe105</td><td></td></tr>
+<tr><td><code>entypo_lastfm</code></td><td>0xe106</td><td></td></tr>
+<tr><td><code>entypo_lastfm_2</code></td><td>0xe107</td><td></td></tr>
+<tr><td><code>entypo_rdio</code></td><td>0xe108</td><td></td></tr>
+<tr><td><code>entypo_rdio_2</code></td><td>0xe109</td><td></td></tr>
+<tr><td><code>entypo_spotify</code></td><td>0xe10a</td><td></td></tr>
+<tr><td><code>entypo_spotify_2</code></td><td>0xe10b</td><td></td></tr>
+<tr><td><code>entypo_qq</code></td><td>0xe10c</td><td></td></tr>
+<tr><td><code>entypo_instagram</code></td><td>0xe10d</td><td></td></tr>
+<tr><td><code>entypo_dropbox</code></td><td>0xe10e</td><td></td></tr>
+<tr><td><code>entypo_evernote</code></td><td>0xe10f</td><td></td></tr>
+<tr><td><code>entypo_flattr</code></td><td>0xe110</td><td></td></tr>
+<tr><td><code>entypo_skype</code></td><td>0xe111</td><td></td></tr>
+<tr><td><code>entypo_skype_2</code></td><td>0xe112</td><td></td></tr>
+<tr><td><code>entypo_renren</code></td><td>0xe113</td><td></td></tr>
+<tr><td><code>entypo_sina_weibo</code></td><td>0xe114</td><td></td></tr>
+<tr><td><code>entypo_paypal</code></td><td>0xe115</td><td></td></tr>
+<tr><td><code>entypo_picasa</code></td><td>0xe116</td><td></td></tr>
+<tr><td><code>entypo_soundcloud</code></td><td>0xe117</td><td></td></tr>
+<tr><td><code>entypo_mixi</code></td><td>0xe118</td><td></td></tr>
+<tr><td><code>entypo_behance</code></td><td>0xe119</td><td></td></tr>
+<tr><td><code>entypo_circles</code></td><td>0xe11a</td><td></td></tr>
+<tr><td><code>entypo_vk</code></td><td>0xe11b</td><td></td></tr>
+</table>
+          @attr name android:icon_name
+        */
+        public static final int icon_icon_name = 0;
+    };
 }
