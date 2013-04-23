@@ -1,0 +1,54 @@
+[
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
+    "jarFileModificationDate": "2013-04-23T21:57:01.735+02:00",
+    "location": "C:\\android\\libraries\\IconView\\IconViewExample\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
+    "jarFileModificationDate": "2013-04-20T14:04:41.298+02:00",
+    "location": "C:\\android\\libraries\\IconView\\IconView\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f3fec4e3d887c5bba177bd62933a8e9ee4b4403c",
+    "jarFileModificationDate": "2013-02-12T22:09:26.453+01:00",
+    "location": "C:\\android\\android-sdk\\platforms\\android-17\\android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "iconview",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b82a7568c4947f912105fac59cd961a33bebf1a5",
+    "jarFileModificationDate": "2013-04-23T22:12:09.901+02:00",
+    "location": "C:\\android\\libraries\\IconView\\IconView\\bin\\iconview.jar",
+    "javaRuntime": false
+  }
+]
