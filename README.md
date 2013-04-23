@@ -1,7 +1,8 @@
 ## IconView
 
 IconView is an extension of Android TextView class which provides support for a custom icon font
- 
+![screenshot](https://raw.github.com/MarsVard/IconView/master/screenshot.png)
+
 ## Usage
 
 ### Including in your project
