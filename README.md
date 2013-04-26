@@ -28,6 +28,13 @@ xmlns:iconview="http://schemas.android.com/apk/res-auto"
     android:textSize="25dp"/>
 ```
 
+## in code usage
+```java
+
+IconView myfavicon = (IconView)findViewById(R.id.my_favorite_view);
+myfavicon.setIcon(Icon.entypo_airplane);
+
+```
 ## Available fonts
 	
 the entypo font is loaded out of the box, you can add your own font by creating a package at http://icomoon.io
